@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  /* border: 1px solid; */
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 595px;
+}
+nav {
+  width: 100%;
+  height: 10%;
+}
+.list {
+  width: 100%;
+  height: 100%;
+}
+.list > ul {
+  display: flex;
+  gap: 33px;
+  padding-left: 856px;
+}
+.list > ul > li {
+  list-style: none;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: right;
+  color: #000000;
+}
+.menu {
+  display: none;
+}
+.hero {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+.hero-text {
+  width: 50%;
+  height: 100%;
+}
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.hero-text > h1 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243d;
+  margin-top: 160px;
+  margin-left: 148px;
+}
+.hero-text > p {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243d;
+  margin-top: 40px;
+  margin-bottom: 38px;
+  margin-left: 148px;
+}
+.hero-text > button {
+  width: 208px;
+  height: 47px;
+  background: #ff6464;
+  border-radius: 2px;
+  margin-left: 148px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+  border: 0;
+}
+
+@media only screen and (max-width: 430px) {
+  header{
+    height: auto;
+  }
+  .list {
+    display: none;
+  }
+  .menu {
+    display: block;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .fa-bars {
+    width: 30px;
+    height: 18px;
+    padding: 20px;
+    padding-right: 40px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-img {
+    width: 100%;
+    height: 50%;
+  }
+  .hero-text {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+  .hero-text > h1 {
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #21243d;
+    margin: 0;
+    margin-bottom: 21px;
+    margin-top: 34px;
+  }
+  .hero-text > p {
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #21243d;
+    margin: 0;
+    margin-bottom: 27px;
+  }
+  .hero-text>button{
+    margin: 0;
+    margin-bottom: 58px;
+  }
+}
